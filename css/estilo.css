@@ -94,6 +94,7 @@ ul{
 .contenedor-cards{
     display:flex;
     justify-content: space-between;
+    margin:0 auto;
     /* border:1px solid black; */
 }
 .card a{
@@ -155,7 +156,7 @@ footer{
     color:white; 
 }
 
-@media (max-width:850px){
+@media (max-width:1000px){
     nav{
         position:fixed;
         top:0;
@@ -184,6 +185,12 @@ footer{
         z-index:100;
         top:0;
         margin-left:80%;
+    }
+    .contenedor-cards{
+        justify-content: center;
+        margin:0 auto;
+        gap:2rem;
+        /* border:1px solid black; */
     }
     footer ul{
         font-size:0.6rem;
