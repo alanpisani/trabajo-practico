@@ -24,6 +24,10 @@ ul{
     justify-content: space-between;
     gap:1rem;
 }
+.nav-links{
+    text-decoration: none;
+    color:black;
+}
 
 .tickets{
     color:green;
@@ -115,4 +119,13 @@ form{
 }
 input{
     width:40rem;
+}
+
+/*-----------------------------------------*/
+footer{
+    display:flex;
+    justify-content: center;
+}
+footer ul{
+    width:80%;
 }
