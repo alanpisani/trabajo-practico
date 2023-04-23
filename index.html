@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
 </head>
@@ -17,7 +18,9 @@
             <p class="titulo">Conf Bs As</p>
 
         </div>
-        <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu"><i class="bi bi-list"></i></label>
+        <nav id="menu">
             <ul>
                 <li><a href="#" class="nav-link">La conferencia</a></li>
                 <li><a href="#" class="nav-link">Los oradores</a></li>
@@ -25,10 +28,11 @@
                 <li><a href="#" class="nav-link">Conviértete en orador</a></li>
                 <li><a class="nav-link tickets" href="#">Comprar tickets</a></li>
             </ul>
+            <label for="menu"><i class="bi bi-x-lg cerrar"></i></label>
         </nav>
     </header>
     <main>
-        <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <!-- <img src="img/hawaii.jpg" class="d-block w-100" alt="..."> -->
@@ -148,7 +152,7 @@
         </div>
 
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-6">
                     <img class="hululu" src="img/honolulu.jpg" alt="">
@@ -180,11 +184,11 @@
                 </div>
                 <textarea name="" id="" cols="30" rows="5" placeholder="Sobre qué quieres hablar"></textarea>
                 <p>Recuerda incluir un título para tu charla</p>
-                <button class="btn btn-success">Enviar</button>
+                <button class="btn btn-yellowgreen">Enviar</button>
             </form>
         </div>
     </main>
-    <footer class="mt-3">
+    <footer class="container-fluid mt-3">
         <ul>
             <li><a href="#" class="nav-link">Preguntas frecuentes</a></li>
             <li><a href="#" class="nav-link">Contáctanos</a></li>

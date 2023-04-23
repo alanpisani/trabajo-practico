@@ -2,31 +2,39 @@ body{
     margin: 0;
     padding:0;
 }
-*{
-    /* border:1px solid blue; */
-}
 header{
     display:flex;
     justify-content: space-around;
+    background-color:rgb(70, 70, 70);
+    color:white;
 }
 .contenedor-logo{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo{
     width:6rem;
     height: 3.5rem;
 }
-
+i{
+    display:none;
+}
+input[type=checkbox]{
+    display:none;
+}
+nav{
+    display:flex;
+    align-items: center;
+}
 ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap:1rem;
 }
-.nav-links{
-    text-decoration: none;
-    color:black;
+.nav-link{
+    text-align: center;
 }
 
 .tickets{
@@ -39,6 +47,8 @@ ul{
 
 .primer{
     background-image: url("../img/hawaii.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .segundo{
     background-image: url("../img/hawaii2.jpg");
@@ -105,6 +115,9 @@ ul{
 }
 
 /*-----------------------------------------*/
+.formulario > p{
+    text-align: center;
+}
 span{
     border-bottom:1px dotted black
 }
@@ -116,16 +129,63 @@ form{
 .contenedor-inputs{
     display:flex;
     justify-content: space-around;
+    gap:1rem;
 }
 input{
     width:40rem;
+}
+
+form p{
+    color:gray;
+}
+.btn-yellowgreen{
+    background-color: yellowgreen;
+}
+.btn-yellowgreen:hover{
+    background-color: lightgreen;
 }
 
 /*-----------------------------------------*/
 footer{
     display:flex;
     justify-content: center;
+    align-items: center;
+    background-color:rgb(51, 81, 138);
+    height: 4rem;
+    color:white; 
 }
-footer ul{
-    width:80%;
+
+@media (max-width:850px){
+    nav{
+        position:fixed;
+        top:0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+        z-index:100;
+        height: 100%;
+        width:100%;
+        background-color: gray;
+    }
+    nav ul{
+        flex-direction: column;
+        gap:5rem;
+    }
+    #menu:checked ~ nav{
+        display:block;
+    }
+    i{
+        display:block;
+        cursor: pointer;
+    }
+    .cerrar{
+        position:absolute;
+        z-index:100;
+        top:0;
+        margin-left:80%;
+    }
+    footer ul{
+        font-size:0.6rem;
+    }
 }
