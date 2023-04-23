@@ -25,4 +25,36 @@ ul{
 .tickets{
     color:green;
 }
+.contenedor-carrusel{
+    display:flex;
+    justify-content: end;
+}
+
+.primer{
+    background-image: url("../img/hawaii.jpg");
+}
+.segundo{
+    background-image: url("../img/hawaii2.jpg");
+}
+.tercer{
+    background-image: url("../img/hawaii3.jpg");
+}
+
+.contenedor-descripciones{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    height:50vh;
+    align-items: end;
+    gap:2rem;
+    color:white;
+}
+.carrusel-botones{
+    display:flex;
+    justify-content: end;
+}
+.btn{
+    color:white;
+    margin-right:1rem;
+}
 
