@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding:0;
 }
+*{
+    /* border:1px solid blue; */
+}
 header{
     display:flex;
     justify-content: space-around;
@@ -87,3 +90,11 @@ ul{
     color:black;
 }
 
+/*-----------------------------------------*/
+
+.contenedor-playa{
+    color:white;
+}
+.hululu{
+    width: 100%;
+}
