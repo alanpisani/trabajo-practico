@@ -58,3 +58,32 @@ ul{
     margin-right:1rem;
 }
 
+/*------------------------------------------------*/
+
+.cards-titulo{
+    color:gray;
+}
+.cards-titulos{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    /* border:1px solid red; */
+}
+.negrita{
+    color:black;
+    font-weight: 700;
+}
+
+.contenedor-cards{
+    display:flex;
+    justify-content: space-between;
+    /* border:1px solid black; */
+}
+.card a{
+    padding:0.3px 5px;
+    font-weight: 700;
+}
+.js{
+    color:black;
+}
+
