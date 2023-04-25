@@ -49,6 +49,7 @@ ul{
 .contenedor-carrusel{
     display:flex;
     justify-content: end;
+    align-items: center;
 }
 
 .primer{
@@ -62,15 +63,15 @@ ul{
 .tercer{
     background-image: url("../img/hawaii3.jpg");
 }
-
 .contenedor-descripciones{
     display:flex;
     flex-direction: column;
     width:50%;
-    height:50vh;
-    align-items: end;
+    height:60vh;
+    text-align: end;
     gap:2rem;
     color:white;
+    margin:10rem 10rem;
 }
 .carrusel-botones{
     display:flex;
@@ -199,6 +200,15 @@ footer{
     .cerrar:hover{
         color:red;
     }
+    .contenedor-descripciones{
+        height:50vh;
+        margin:0 auto;
+        width:100%;
+        padding:1rem;
+        font-size: small;
+    }
+
+
     .contenedor-cards{
         justify-content: center;
         margin:0 auto;
