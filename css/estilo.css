@@ -192,6 +192,7 @@ footer{
         display:block;
         cursor: pointer;
         margin:0.5rem 1rem;
+        
     }
     .cerrar{
         position:absolute;
@@ -199,7 +200,6 @@ footer{
         right:0;
         z-index:100;
         transition:0.15s;
-
     }
     .cerrar:hover{
         color:red;
