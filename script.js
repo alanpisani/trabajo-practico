@@ -8,10 +8,9 @@ const btnResumen = document.querySelector('#btn-resumen');
 
 btnResumen.addEventListener("click", ()=>{
     let indice = categoria.selectedIndex;
-    let valor = cantidad.value;
+    let valor = 200 * cantidad.value;
     let descuento = 0
     let total = 0
-    //console.log(indice)
 
     if(valor == ""){
         valor = 0
