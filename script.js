@@ -12,21 +12,23 @@ btnResumen.addEventListener("click", ()=>{
     let descuento = 0
     let total = 0
 
-    if(valor == ""){
+
+
+    if(valor < 0){
         valor = 0
     }
 
     if(indice == 0){
 
-        descuento = (80*valor) / 100
+        descuento = (80 * valor) / 100
         
     }else if(indice == 1){
 
-        descuento = (50*valor) / 100
+        descuento = (50 * valor) / 100
 
     }else{
 
-        descuento = (15*valor) / 100
+        descuento = (15 * valor) / 100
     }
     total = valor - descuento
     resumen.innerHTML = total;
