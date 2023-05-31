@@ -226,3 +226,76 @@ footer{
         font-size:0.6rem;
     }
 }
+
+/*--------TICKET.HTML-----------*/
+.promos{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+
+    /* border:1px solid red; */
+}
+.promo{
+    width: 15rem;
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:0;
+    padding-right:0;
+}
+.estudiante{
+    border: 1px solid blue;
+}
+.trainee{
+    border:1px solid rgb(87, 159, 218)
+}
+.junior{
+    border:1px solid rgb(250, 200, 0);
+}
+
+.formulario2{
+    width:50em;
+    /* border:1px solid red; */
+    
+}
+
+.ticket-input{
+    padding:.5rem;
+    width:24.4rem;
+}
+.ticket-largo{
+    padding:.5rem;
+}
+
+.ticket-row{
+    display:flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.caja-resumen{
+    background-color: rgb(158, 188, 253);
+    border-radius:0.5rem;
+}
+
+.caja-resumen p{
+    color:rgb(0, 0, 105);
+    margin-left:1rem;
+    margin-top:1rem;
+}
+
+.botones{
+    border-radius:.5rem;
+    background-color: lawngreen;
+    border:0;
+    color:rgb(252, 241, 241);
+    font-weight: 700;
+    transition:.2s
+}
+.botones:hover{
+    color:black;
+}
+

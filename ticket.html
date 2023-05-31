@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <a href="index.html"><img class="logo" src="img/codoacodo.png" alt="logo codo a codo"></a>
+            <p class="titulo">Conf Bs As</p>
+
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu"><i class="bi bi-list"></i></label>
+        <nav id="menu">
+            <ul>
+                <li><a href="#" class="nav-link">La conferencia</a></li>
+                <li><a href="#" class="nav-link">Los oradores</a></li>
+                <li><a href="#" class="nav-link">El lugar y la fecha</a></li>
+                <li><a href="#" class="nav-link">Conviértete en orador</a></li>
+                <li><a class="nav-link tickets" href="ticket.html">Comprar tickets</a></li>
+            </ul>
+            <label for="menu"><i class="bi bi-x cerrar"></i></label> 
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid row promos mt-5">
+            <div class="col-md-4 promo estudiante">
+                <h5>Estudiante</h5>
+                <p>Tienen un descuento</p>
+                <h5>80%</h5>
+                <p>* Presentar documentación</p>
+            </div>
+            <div class="col-md-4 promo trainee">
+                <h5>Trainee</h5>
+                <p>Tienen un descuento</p>
+                <h5>50%</h5>
+                <p>* Presentar documentación</p>
+            </div>
+            <div class="col-md-4 promo junior">
+                <h5>Junior</h5>
+                <p>Tienen un descuento</p>
+                <h5>15%</h5>
+                <p>* Presentar documentación</p>
+            </div>
+        </div>
+        
+        <div class="cards-titulos mt-3 mb-3">
+            <h6 class="cards-titulo">VENTA</h6>
+            <h1 class="cards-titulo negrita">VALOR DE TICKET $200</h1>
+        </div>
+
+        <div class="formulario2 container">
+            <form>
+                
+                    <div class="ticket-row row">
+                        <input class="ticket-input col-md-6" type="text" placeholder="Nombre">
+                        <input class="ticket-input col-md-6" type="text" placeholder="Apellido">
+                        <input class="ticket-largo" type="email" placeholder="Correo">
+                    </div>
+                    
+                    <div class="ticket-row row">
+                        <label class="ticket-input row col-md-6" for="cantidad">Cantidad</label>
+                        <label class="ticket-input row col-md-6" for="categoria">Categoría</label>
+                    </div>
+                    <div class="ticket-row row">
+                        <input class="ticket-input col-md-6" type="text" id="cantidad" name="cantidad" placeholder="cantidad">
+                        <select class="ticket-input col-md-6" name="categoria" id="categoria">
+                            <option selected value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-4 caja-resumen">
+                        <p>Total a Pagar: $ <span id="resumen"></span></p>
+                    </div>
+
+                    <div class="mt-4 ticket-row row">
+                        <button type="reset"class="botones col-md-6 ticket-input" id="btn-borrar">Borrar</button>
+                        <button type="button" class="botones col-md-6 ticket-input" id="btn-resumen">Resumen</button>
+                    </div>
+
+            </form>
+
+            
+        </div>
+
+
+    </main>
+    <footer class="footer container-fluid mt-3">
+        <ul>
+            <li><a href="#" class="nav-link">Preguntas frecuentes</a></li>
+            <li><a href="#" class="nav-link">Contáctanos</a></li>
+            <li><a href="#" class="nav-link">Prensa</a></li>
+            <li><a href="#" class="nav-link">Conferencias</a></li>
+            <li><a href="#" class="nav-link">Términos y condiciones</a></li>
+            <li><a href="#" class="nav-link">Privacidad</a></li>
+            <li><a href="#" class="nav-link">Estudiantes</a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
