@@ -1,7 +1,7 @@
 const cantidad = document.querySelector('#cantidad');
 const categoria = document.querySelector('#categoria');
 const resumen = document.querySelector('#resumen');
-const btnBorrar = document.querySelector('#btn-borrar');
+//const btnBorrar = document.querySelector('#btn-borrar');
 const btnResumen = document.querySelector('#btn-resumen');
 
 
